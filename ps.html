@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final Gabriel Armella</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!-- Encabezado -->
@@ -16,12 +15,14 @@
                 <h1 class="navbar-logo">Steam Verde</h1>
             </a>
             <ul>
-                <li><a id="inicio" href="./index.html">INICIO</a></li>
-                <li><a id="pc" href="./pc.html">PC</a></li>
-                <li><a id="xbox" href="./xbox.html">XBOX</a></li>
-                <li><a id="ps" href="./ps.html">PS</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./pc.html">PC</a></li>
+                <li><a href="./xbox.html">XBOX</a></li>
+                <li><a href="./ps.html">PS</a></li>
             </ul>
-            <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+            <a href="./carrito.html">
+                <h1 class="ver-carrito" id="verCarrito">🛒<span id="cantidadCarrito" class="cantidad-carrito"></span></h1>
+            </a>
         </nav>
     </div>
     <!-- banner -->
@@ -31,11 +32,17 @@
             <p>Donde podes descarg... comprar tus juegos.</p>
         </div>
     </div>
-    <!--Seccion Juegos/Productos-->
-    <div id="juegosContent" class="container-juegos"></div>
+    <!--Seccion Juegos/Productos PlayStation-->
+    <div>
+        <h2>PlayStation</h2>
+    </div>
+    <div id="juegosPlay" class="container-juegos"></div>
     <!--     modal container -->
     <div id="modal-container" class="modal-container"></div>
+    <script src="./js/funciones.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/carrito.js"></script>
+
+    <!-- <script src="./js/carrito.js"></script> -->
+
 </body>
 </html>
